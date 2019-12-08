@@ -15,3 +15,51 @@
 Linkear v-model- directiva, refesecar el codigo
 
 changePercent', 'title','img','name', 'price
+
+## Slots
+
+Introducir elementos a lun elemento hijo
+
+**Comuncicaión de padre a hijo** : A través de props.
+**Comuncicaión de hijo a padre** : Por $emit.
+
+## created()
+
+Este momento del ciclo de vida del compoenente es ideal obtener informacion de una api rest
+
+## mounted()
+
+Acceder informacaion del DOM
+
+**Practica del modulo 3** https://codepen.io/ianaya89/pen/VwwGMOE
+
+Actualizar o instalar el paquete de node para vue
+
+```
+npm i -g @vue/cli
+```
+
+
+Crear proyecto:
+
+```
+vue create [nombre-proyecto]
+```
+
+```
+npm i -g serve
+```
+Instala la dependencia serve que hace que el bunbler constrido para produccion este siempre actualizado
+
+```
+serve -s dist
+
+```
+Interfaz para el manejo del proyecto en vue
+
+```
+vue ui
+```
+Instalar framework de css Tailwindcss
+
+
