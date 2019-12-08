@@ -62,4 +62,14 @@ vue ui
 ```
 Instalar framework de css Tailwindcss
 
+## Vue-router
+```
+npm i -S vue-router
+```
+Teniendo en cuenta que la bandera -S para que se guarde en las dependencias
 
+## Corregir errores de lint
+
+```
+npm run lint
+```
