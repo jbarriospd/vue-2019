@@ -9,36 +9,22 @@
 </head>
 <body>
   <div id="app" :style="{ background: '#' + color}">
-      <img 
-          v-on:mouseover="togglePrices" 
-          v-on:mouseout="togglePrices" 
-          :src="img" :alt="name"> 
-      <h1 :class="changePercent > 0 ? 'green' : 'red' ">
-        {{ title }}
-        <span v-if="changePercent > 0">👍🏻</span>
-        <span v-else-if="changePercent < 0">👎🏾</span>
-        <span v-else>🤞</span>  
-        <span v-on:click="togglePrices">{{ showPrices ? '🙈' : '🙉' }}</span>
-      </h1>
+      
+      <coin-detail 
+      @change-color="updateColor"
+      :coin="btc"
+      >
+      <template v-slot:texto>
 
-      <input type="number" v-model="value" />
-      <span>{{ convertedValue }}</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur in, asperiores eligendi fuga voluptates libero, esse, ipsam veniam at aperiam porro cum corrupti! Repudiandae sunt est deserunt commodi, mollitia voluptate!</p>
 
-      <ul>
-        <li 
-          v-for="(p, i) in prices" 
-          :key="p">{{i}}-{{ p }}</li>
-      </ul>
+      </template>
+      <template v-slot:link>
+        <a href="#"></a>
+      </template>
+      
+    </coin-detail>
 
-      <ul v-show="showPrices">
-          <li 
-            class="uppercase"
-            v-bind:class="{ orange: p.value === price, red: p.value < price, green: p.value > price}"
-            v-for="(p, i) in pricesWithDays" :key="p.day">
-            {{i}}-{{ p.day }}-{{ p.value }}
-          </li>
-      </ul>
-  
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
