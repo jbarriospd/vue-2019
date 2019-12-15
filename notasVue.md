@@ -82,3 +82,15 @@ npm run lint
 **router-link**: rendecriza las rutas
 
 **$router**: hace parte de la instancia de Router y permite la navegacion atravez de codigo, pusheando  - empujando una nueva ruta
+
+instalar libreria
+numeral - esta libreria es para daar formato a valores
+
+````
+npm i -S numeral
+```
+
+instalar libreria de spinners y chartkick
+```
+npm i -S @saeris/vue-spinners vue-chartkick
+```
