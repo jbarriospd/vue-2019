@@ -72,4 +72,13 @@ Teniendo en cuenta que la bandera -S para que se guarde en las dependencias
 
 ```
 npm run lint
+
 ```
+**$route**: (Se utiliza en el proyecto para acceder al id de la ruta dinamica) es una propiedad de vue, que se agrega a cada uno de los componentes de vue cuando estamos trabajando con el view router, es decir $router representa la ruta y toda la informacion disponible de la ruta, (url, parametros, query string...)
+
+**Promises all**: Permite ejecutar diferentes promises de manera simultanea atravez de un array y manejar la respuestas cuando las promesas hayan terminado
+
+**router-view**: renderiza una vista - app.vue*:
+**router-link**: rendecriza las rutas
+
+**$router**: hace parte de la instancia de Router y permite la navegacion atravez de codigo, pusheando  - empujando una nueva ruta
