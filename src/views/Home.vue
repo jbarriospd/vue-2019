@@ -16,10 +16,12 @@ export default {
 
   data() {
     return {
-      assets: []
+      
+		  isLoading: false,
+		  assets: []
+
     }
   },
-
   created() {
     this.isLoading = true
 
